@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+
+    <!-- PRO Framework Panel Begin -->
+    <div id="advanced"><span class="trigger"><strong></strong><em></em></span><div class="bg_pro">
+        <div class="pro_main"><a href="" class="pro_logo"></a>
+        <ul class="pro_menu">
+            <li><a href="index.html"<img src="~/App_Data/images/pro_home.png" width="17" height="15" alt=""></a></li>
+            <li><a href="404.html">Pages<span></span></a>
+                <ul>
+                    <li><a href="under_construction.html">Under Construction</a></li>
+                    <li><a href="intro.html">Intro Page</a></li>
+                    <li><a href="404.html">404 page</a></li>
+                </ul>
+            </li>
+            <li><a href="layouts.html">Layouts</a></li>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="portfolio.html">Gallery Layouts<span></span></a>
+                <ul>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="just-slider.html">Sliders</a>
+                        <ul>
+                            <li><a href="just-slider.html">Just Slider</a></li>
+                            <li><a href="kwicks.html">Kwicks Slider</a></li>
+                            <li><a href="functional-slider.html">Functional Slider</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery-page1.html">Gallery</a></li>
+                </ul>
+            </li>
+            <li><a href="misc.html">Extras<span></span></a>
+                <ul>
+                    <li><a href="social_media.html">Social and Media<br> Sharing</a></li>
+                    <li><a href="css3.html">CSS3 Tricks</a></li>
+                    <li><a href="misc.html">Misc</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="clear"></div></div></div><div class="bg_pro2"></div></div>
+    <!-- PRO Framework Panel End -->
+
+    <header>
+        <div class="container_24">
+            <div class="wrapper">
+                <div class="grid_17">
+                    <h1><a href="index.html">Idealex</a></h1>
+                </div>
+                <div class="grid_7">
+                    <form id="search2">
+                        <div class="fleft"><input type="text"></div>
+                        <a onclick="document.getElementById('search2').submit()">search</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <nav class="main-menu">
+            <ul class="sf-menu">
+                <li class="current">
+                    <a href="index.html"><em>about Us</em><strong></strong></a><ul>
+                        <li><a href="more.html">Who We Are</a></li>
+                        <li><a href="more.html">News</a></li>
+                        <li><a href="more.html">Products</a></li>
+                    </ul>
+                </li>
+                <li><a href="index-1.html"><em>services</em><strong></strong></a></li>
+                <li><a href="index-2.html"><em>solutions</em><strong></strong></a></li>
+                <li><a href="index-3.html"><em>Training</em><strong></strong></a></li>
+                <li><a href="index-4.html"><em>support</em><strong></strong></a></li>
+                <li><a href="index-5.html"><em>Clients</em><strong></strong></a></li>
+                <li class="last"><a href="index-6.html"><em>contacts</em><strong></strong></a></li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+        <div class="pad-slider">
+            <div class="main-slider">
+                <ul class="items">
+                    <li>
+                        <img src="images/slide1.jpg" alt="" />
+                        <div class="slider-banner"><span>The Next Level of Your Success</span></div>
+                    </li>
+                    <li>
+                        <img src="images/slide2.jpg" alt="" />
+                        <div class="slider-banner"><span>We offer Different Ways of Problem Solving</span></div>
+                    </li>
+                    <li>
+                        <img src="images/slide3.jpg" alt="" />
+                        <div class="slider-banner"><span>We craft practical solutions</span></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/css")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
